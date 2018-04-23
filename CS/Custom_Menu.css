@@ -1,0 +1,58 @@
+﻿.headerMenu .dxmLite_MetropolisBlue .dxm-main {
+    background-color: #0072C6;
+}
+
+.headerMenu .dxmLite_MetropolisBlue .dxm-item {
+    background-color: #0072C6;
+    color: white;
+    font-family: 'Segoe UI', 'Segoe UI Web Regular', 'Segoe UI Symbol', 'Helvetica Neue', 'BBAlpha Sans', 'S60 Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+    .headerMenu .dxmLite_MetropolisBlue .dxm-item,
+    .headerMenu .dxmLite_MetropolisBlue .dxm-item a.dx {
+        color: white;
+        font-family: 'Segoe UI', 'Segoe UI Web Regular', 'Segoe UI Symbol', 'Helvetica Neue', 'BBAlpha Sans', 'S60 Sans', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+.headerMenu .dxmLite_MetropolisBlue .dxm-hovered {
+    background-color: #004B8B !important;
+}
+
+.headerMenu .dxmLite_MetropolisBlue .dxm-popup .dxm-item {
+    background-color: #FFFFFF;
+    color: rgb(0, 0, 0);
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.headerMenu .dxmLite_MetropolisBlue .dxm-popup .dxm-hovered {
+    background-color: #F3F3F3 !important;
+    color: rgb(0, 0, 0);
+}
+
+.headerMenu .dxmLite_MetropolisBlue .dxm-popup .dxm-item,
+.headerMenu .dxmLite_MetropolisBlue .dxm-popup .dxm-item a.dx {
+    color: rgb(0, 0, 0);
+}
+
+.headerMenu .dxmLite_MetropolisBlue .dxm-popup {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: 2px solid #0072C6;
+    border-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.headerMenu .dxmLite_MetropolisBlue .dxm-horizontal .dxm-separator b {
+    width: 0px;
+    background-color: #0072C6;
+}
+
+.headerMenu {
+    background-color: #0072C6;
+}

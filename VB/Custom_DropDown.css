@@ -1,0 +1,75 @@
+﻿.dropDownMenu .dxmLite_MetropolisBlue .dxm-main {
+    background-color: #FFFFFF;
+}
+
+.dropDownMenu .dxmLite_MetropolisBlue .dxm-item {
+    background-color: #FFFFFF;
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', 'Segoe UI Web Regular', 'Segoe UI Symbol', 'Helvetica Neue', 'BBAlpha Sans', 'S60 Sans', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+    .dropDownMenu .dxmLite_MetropolisBlue .dxm-item,
+    .dropDownMenu .dxmLite_MetropolisBlue .dxm-item a.dx {
+        color: rgb(0, 0, 0);
+        font-family: 'Segoe UI', 'Segoe UI Web Regular', 'Segoe UI Symbol', 'Helvetica Neue', 'BBAlpha Sans', 'S60 Sans', Arial, sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+
+.dropDownMenu .dxmLite_MetropolisBlue .dxm-noImage .dxm-content {
+    padding-left: 29px !important;
+}
+
+.dropDownMenu .dxmLite_MetropolisBlue .dxm-hovered {
+    background-color: #FFFFFF !important;
+}
+
+.dropDownMenu .dxmLite_MetropolisBlue .dxm-popup .dxm-item {
+    background-color: #FFFFFF;
+    color: rgb(102, 102, 102);
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.dropDownMenu .dxmLite_MetropolisBlue .dxm-popup .dxm-hovered {
+    background-color: #F3F3F3 !important;
+    color: rgb(102, 102, 102);
+}
+
+.dropDownMenu .dxmLite_MetropolisBlue .dxm-popup .dxm-item,
+.dropDownMenu .dxmLite_MetropolisBlue .dxm-popup .dxm-item a.dx {
+    color: rgb(102, 102, 102);
+}
+
+.dropDownMenu .dxmLite_MetropolisBlue .dxm-popup {
+    color: rgb(102, 102, 102);
+    background-color: white;
+    border: 2px solid #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dropDownMenu .dxm-separator {
+    padding: 10px;
+}
+
+.dropDownMenu .dxmLite_MetropolisBlue .dxm-horizontal .dxm-separator b {
+    width: 0px;
+    background-color: #FFFFFF;
+}
+
+.dropDownMenu {
+    background-color: #FFFFFF;
+}
+
+.dropDownMenu_SortBy .dx-vam {
+    float: left;
+}
+
+.dropDownMenu_SortBy img {
+    margin-left: 4px;
+    float: right !important;
+}

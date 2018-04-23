@@ -1,0 +1,78 @@
+﻿#slider ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    height: 126px;
+    padding: 37px 37px 33px;
+}
+
+#slider a, #slider li {
+    width: 120px;
+    height: 120px;
+    display: block;
+    float: left;
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.box .author {
+    height: 96px;
+    padding-left: 4px;
+    padding-top: 4px;
+    font-family: 'Segoe UI Light', 'Segoe UI Web Light', 'Segoe UI Web Regular', 'Segoe UI', 'Segoe UI Symbol', HelveticaNeue-Light, 'Helvetica Neue', Arial, sans-serif;
+    font-kerning: auto;
+    font-size: 19px;
+    font-style: normal;
+    font-variant: normal;
+    font-variant-ligatures: normal;
+    font-weight: normal;
+}
+
+.box .footer {
+    padding-left: 6px;
+    font-family: 'Segoe UI', 'Segoe UI Web Regular', 'Segoe UI Symbol', 'Helvetica Neue', 'BBAlpha Sans', 'S60 Sans', Arial, sans-serif;
+    font-kerning: auto;
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-variant-ligatures: normal;
+    font-weight: normal;
+}
+
+.box:nth-child(1), .box:nth-child(1) a {
+    background: #0072C6;
+}
+
+    .box:nth-child(1) a {
+        border: 2px solid #0072C6;
+    }
+
+        .box:nth-child(1) a:hover {
+            border: 2px solid gray;
+        }
+
+.box:nth-child(2), .box:nth-child(2) a {
+    background: #D24726;
+}
+
+    .box:nth-child(2) a {
+        border: 2px solid #D24726;
+    }
+
+        .box:nth-child(2) a:hover {
+            border: 2px solid gray;
+        }
+
+.box:nth-child(3), .box:nth-child(3) a {
+    background: #094AB2;
+}
+
+    .box:nth-child(3) a {
+        border: 2px solid #094AB2;
+    }
+
+        .box:nth-child(3) a:hover {
+            border: 2px solid gray;
+        }

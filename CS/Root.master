@@ -1,0 +1,163 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Root.master.cs" Inherits="RootMaster" %>
+
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxSplitter" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxMenu" TagPrefix="dx" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title>Reader</title>
+     
+    <link href="Site.css"" rel="stylesheet"/>
+    
+    <link href="Custom_Menu.css"" rel="stylesheet"/>
+    <link href="Custom_Slider.css"" rel="stylesheet"/>
+    <link href="Custom_Splitter.css"" rel="stylesheet"/>
+    <link href="Custom_DropDown.css"" rel="stylesheet"/>
+    <link href="Custom_NavBar.css"" rel="stylesheet"/>
+
+    <script type="text/javascript" src="jquery-2.1.0.js"></script>
+</head>
+
+<body runat="server" id="Body">
+    <form id="aspNetForm" runat="server">
+
+        <script type="text/javascript">
+
+            function OnMenuSlide() {
+                $("#slider").slideDown("slow", function () {
+                    $("#slider").focus();
+                });
+            }
+
+            $(function () {
+
+                $("#slider").blur(function () {
+                    var focused = document.activeElement;
+
+                    if (focused && focused.className === 'author') {
+                        return;
+                    }
+
+                    $("#slider").hide();
+
+                });
+
+                $(".link").click(function () {
+
+                    $("#slider").hide();
+
+                    var author = $(this).attr("data-author");
+
+                    if (typeof window.OnSelectAuthor === 'function') {
+
+                        window.OnSelectAuthor(author, $(this).attr("data-info"));
+                    }
+
+                });
+
+            });
+
+        </script>
+
+        <div id="slider" style="position: absolute; width: 100%; height: 200px; z-index: 1000; background-color: #1D1D1D; display: none;">
+            <div>
+                <ul>
+                    <% foreach(Author author in WebDbProvider.Authors) { %>
+                        <li class="box"><a class="link" data-author='<%=author.Id%>' data-info="<%=author.Desciption%>">
+                            <div class="author"><%=author.Display%></div>
+                            <div class="footer"><%=author.Footer%></div>
+                        </a></li>
+                    <% } %>
+                </ul>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+
+        <div class="headerMenu">
+            <div style="float: left; padding-left: 6px;">
+                <dx:ASPxMenu ID="MainMenu" runat="server" ItemAutoWidth="False" ClientInstanceName="MainMenu">
+                    <ClientSideEvents ItemClick="function(s, e) {
+                         
+    if (e.item.name === 'SliderMenuItem') {
+    
+        OnMenuSlide();
+    }
+
+    else if (typeof window.OnTopMenuItemClick === 'function') {
+    
+        window.OnTopMenuItemClick(s, e);
+
+    }
+	
+}" />
+                    <Items>
+                        <dx:MenuItem Text=" " Name="SliderMenuItem">                            
+                            <Image Height="18px" Url="~/DevExpress-Logo-Small-White.png" Width="122px">
+                            </Image>
+                        </dx:MenuItem>
+                    </Items>
+                    <ItemStyle>
+                        <Paddings PaddingTop="10" PaddingBottom="10" />
+                    </ItemStyle>
+                    <Border BorderWidth="0px" />
+                    <BorderTop BorderWidth="1px" />
+                </dx:ASPxMenu>
+            </div>
+            <div style="float: right;">
+                <dx:ASPxMenu ID="RightMenu" runat="server" ItemAutoWidth="False">
+                    <ItemStyle>
+                        <Paddings PaddingTop="10" PaddingBottom="10" />
+                    </ItemStyle>
+                    <Border BorderWidth="0px" />
+                    <BorderTop BorderWidth="1px" />
+                </dx:ASPxMenu>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+
+        <dx:ASPxSplitter ID="MainSplitter" runat="server" AllowResize="False" Orientation="Vertical"
+            FullscreenMode="True" SeparatorVisible="False" Height="100%" Width="100%">
+            <Styles>
+                <Pane>
+                    <Paddings Padding="0px" />
+                    <Border BorderWidth="0px" />
+                </Pane>
+            </Styles>
+            <Panes>
+                <dx:SplitterPane Name="MainContentPane" MinSize="375px">
+                    <PaneStyle CssClass="MainContentPane">
+                        <BorderBottom BorderWidth="1px"></BorderBottom>
+                    </PaneStyle>
+                    <ContentCollection>
+                        <dx:SplitterContentControl ID="MainContentContentControl" runat="server">
+                            <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </dx:SplitterContentControl>
+                    </ContentCollection>
+                    <PaneStyle BackColor="white">
+                        <BorderBottom BorderWidth="1px" />
+                    </PaneStyle>
+                </dx:SplitterPane>   
+                 <dx:SplitterPane Name="Footer" Size="25px" PaneStyle-CssClass="footerPane">
+                    <PaneStyle CssClass="footerPane"></PaneStyle>
+                    <ContentCollection>
+                        <dx:SplitterContentControl ID="SplitterContentControl4" runat="server">
+                            <div class="footerMenu">
+                            </div>
+                            <div class="copyright">
+                                <dx:ASPxLabel ID="ASPxLabel2" runat="server">
+                                </dx:ASPxLabel>
+                            </div>
+                        </dx:SplitterContentControl>
+                    </ContentCollection>
+                </dx:SplitterPane>       
+            </Panes>
+        </dx:ASPxSplitter>
+
+    </form>
+</body>
+</html>
