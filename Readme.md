@@ -6,14 +6,14 @@
 * [Custom_NavBar.css](./CS/Custom_NavBar.css)
 * [Custom_Slider.css](./CS/Custom_Slider.css)
 * [Custom_Splitter.css](./CS/Custom_Splitter.css)
-* **[Default.aspx](./CS/Default.aspx) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))**
+* **[Default.aspx](./CS/Default.aspx) (VB: [Default.aspx](./VB/Default.aspx))**
 * [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))
-* [Document.aspx](./CS/Document.aspx) (VB: [Document.aspx.vb](./VB/Document.aspx.vb))
+* [Document.aspx](./CS/Document.aspx) (VB: [Document.aspx](./VB/Document.aspx))
 * [Document.aspx.cs](./CS/Document.aspx.cs) (VB: [Document.aspx.vb](./VB/Document.aspx.vb))
-* [Edit.aspx](./CS/Edit.aspx) (VB: [Edit.aspx.vb](./VB/Edit.aspx.vb))
+* [Edit.aspx](./CS/Edit.aspx) (VB: [Edit.aspx](./VB/Edit.aspx))
 * [Edit.aspx.cs](./CS/Edit.aspx.cs) (VB: [Edit.aspx.vb](./VB/Edit.aspx.vb))
 * [Editor.css](./CS/Editor.css)
-* [Root.master](./CS/Root.master) (VB: [Root.master.vb](./VB/Root.master.vb))
+* [Root.master](./CS/Root.master) (VB: [Root.master](./VB/Root.master))
 * [Root.master.cs](./CS/Root.master.cs) (VB: [Root.master.vb](./VB/Root.master.vb))
 * [Site.css](./CS/Site.css)
 <!-- default file list end -->
