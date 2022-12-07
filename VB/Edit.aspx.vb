@@ -130,7 +130,7 @@ Partial Public Class Edit
 
 
 
-	Private Sub BuildMenu(ByVal menu As DevExpress.Web.ASPxMenu.ASPxMenu) Implements IMenuBuilder.BuildMenu
+	Private Sub BuildMenu(ByVal menu As DevExpress.Web.ASPxMenu) Implements IMenuBuilder.BuildMenu
 		If (Not IsPostBack) AndAlso (Not IsCallback) Then
 
 			menu.Items.Add("Save", "CMD_SAVE")

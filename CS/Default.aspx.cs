@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 public partial class _Default : System.Web.UI.Page, IMenuBuilder {
     public String Author { get; set; }
     
-    void IMenuBuilder.BuildMenu(DevExpress.Web.ASPxMenu.ASPxMenu menu) {        
+    void IMenuBuilder.BuildMenu(DevExpress.Web.ASPxMenu menu) {        
         if (!IsPostBack && !IsCallback) {        
             menu.Items.Add("New", "CMD_NEW");
             menu.Items.Add("Edit", "CMD_EDIT");

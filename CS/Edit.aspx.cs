@@ -131,7 +131,7 @@ public partial class Edit : System.Web.UI.Page, IMenuBuilder {
 
 
 
-    void IMenuBuilder.BuildMenu(DevExpress.Web.ASPxMenu.ASPxMenu menu) {
+    void IMenuBuilder.BuildMenu(DevExpress.Web.ASPxMenu menu) {
         if (!IsPostBack && !IsCallback) {
 
             menu.Items.Add("Save", "CMD_SAVE");

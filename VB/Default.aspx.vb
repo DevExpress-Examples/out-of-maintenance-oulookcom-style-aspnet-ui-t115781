@@ -22,7 +22,7 @@ Partial Public Class _Default
 		End Set
 	End Property
 
-	Private Sub BuildMenu(ByVal menu As DevExpress.Web.ASPxMenu.ASPxMenu) Implements IMenuBuilder.BuildMenu
+	Private Sub BuildMenu(ByVal menu As DevExpress.Web.ASPxMenu) Implements IMenuBuilder.BuildMenu
 		If (Not IsPostBack) AndAlso (Not IsCallback) Then
 			menu.Items.Add("New", "CMD_NEW")
 			menu.Items.Add("Edit", "CMD_EDIT")
