@@ -1,8 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128567230/14.1.3%2B)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T115781)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 <!-- default file list -->
 *Files to look at*:
 
@@ -23,9 +18,6 @@
 * [Site.css](./CS/Site.css)
 <!-- default file list end -->
 # Oulook.com Style ASP.NET UI
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t115781/)**
-<!-- run online end -->
 
 
 This example shows how to customize the CSS of the DevExpress ASP.NET Controls like Grid, Menu and NavBar to create UI that looks like outlook.com<br /><br /><img src="https://raw.githubusercontent.com/DevExpress-Examples/oulookcom-style-aspnet-ui-t115781/14.1.3+/media/b16d20eb-f652-11e3-80b8-00155d624807.png">
